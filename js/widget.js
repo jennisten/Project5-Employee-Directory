@@ -32,7 +32,7 @@ $(document).ready(function() {
         modalContent += '<hr><p>' + employee.cell + '</br>';
         modalContent += employee.location.street + ', ' + employee.location.city.toUpperCase() + '</br>';
         modalContent += employee.location.postcode + ' ' + employee.location.state + '</br>';
-        modalContent += 'Birthday: ' + employee.dob.substr(0, 10) + '</br>';
+        modalContent += 'Birthday: ' + employee.dob.date.substr(0, 10) + '</br>';
         modalContent += '</div>'; //close div element
         $('.modal').append(modalContent); //add the content to modal div
         //fade into the modal
